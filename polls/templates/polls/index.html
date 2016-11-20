@@ -5,6 +5,10 @@
 <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}" />
 {% endblock %}
 
+{% block content_title %}
+    <h1>Polls</h1>
+{% endblock %}
+
 {% block content %}
     {% if latest_question_list %}
         <ul>
