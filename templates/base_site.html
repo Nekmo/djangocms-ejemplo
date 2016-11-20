@@ -1,3 +1,3 @@
 {% extends "base.html" %}
 
-{% block title %}{{ title }} | {{ site_title|default:_('Polls') }}{% endblock %}
+{% block title %}{% block title_page %}{{ title }}{% endblock %} | {{ site_title|default:_('Polls') }}{% endblock %}
