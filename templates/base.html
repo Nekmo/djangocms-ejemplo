@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<body>
+<div id="container">
+{% block container %}
+    <div id="content">
+        {% block content_title %}{% if title %}<h1>{{ title }}</h1>{% endif %}{% endblock %}
+        {% block content %}{% endblock %}
+        {% block sidebar %}{% endblock %}
+    </div>
+{% endblock %}
+</div>
+</body>
+</html>
