@@ -5,7 +5,7 @@ django-cms>=3.0
 # lock-in their version, specify them
 Django>=1.8
 
-django-treebeard==3.0
+django-treebeard==4.0.1
 django-sekizai==0.10.0
 django-classy-tags==0.6.2
 djangocms-admin-style==0.2.2
