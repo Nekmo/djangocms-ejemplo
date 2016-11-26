@@ -48,6 +48,8 @@ INSTALLED_APPS = [
     'menus',  # helper for model independent hierarchical website navigation
     'sekizai',  # for JavaScript and CSS management
 
+    # Own modules
+    'polls',
 ]
 
 MIDDLEWARE_CLASSES = [
