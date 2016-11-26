@@ -19,8 +19,7 @@ from django.conf.urls.static import static
 from django.contrib import admin
 
 urlpatterns = [
+    url(r'^polls/', include('polls.urls')),
     url(r'^admin/', admin.site.urls),
     url(r'^', include('cms.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
-    url(r'^polls/', include('polls.urls')),
-]
