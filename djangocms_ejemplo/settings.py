@@ -40,13 +40,13 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'django.contrib.sites',
 
     # Django CMS apps
     'cms',  # django CMS itself
     'treebeard',  # utilities for implementing a tree
     'menus',  # helper for model independent hierarchical website navigation
     'sekizai',  # for JavaScript and CSS management
-    'django.contrib.messages',  # to enable messages framework (see :ref:`Enable messages <enable-messages>`)
 
 ]
 
@@ -136,6 +136,8 @@ USE_I18N = True
 USE_L10N = True
 
 USE_TZ = True
+
+SITE_ID = 1
 
 
 # Static files (CSS, JavaScript, Images)
