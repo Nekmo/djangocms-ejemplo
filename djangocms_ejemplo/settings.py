@@ -147,4 +147,5 @@ STATIC_URL = '/static/'
 
 
 CMS_TEMPLATES = (
+    ('base.html', 'Base'),
 )
