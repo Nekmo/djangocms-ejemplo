@@ -6,6 +6,7 @@ from django.utils.translation import ugettext_lazy as _
 
 class PollsApphook(CMSApp):
     name = _("Polls Apphook")
+    app_name = "polls"  # namespace en el urls.py
 
     def get_urls(self, page=None, language=None, **kwargs):
         return ["polls.urls"]  # Ahora el urls de la app se carga con esto
