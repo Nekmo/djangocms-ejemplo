@@ -1,5 +1,5 @@
 {% extends "polls/base.html" %}
-{% load i18n %}
+{% load i18n cms_tags %}
 
 {% block title_page %}
     {% blocktrans with question_text=question.question_text %}{{ question_text }} - results{% endblocktrans %}
@@ -12,9 +12,11 @@
 {% block content %}
     <ul>
     {% for choice in question.choice_set.all %}
+        {% render_model_block choice %}
         <li>{{ choice.choice_text }} <span class="label label-info">
             {{ choice.votes }} vote{{ choice.votes|pluralize }}</span>
         </li>
+        {% endrender_model_block %}
     {% endfor %}
     </ul>
 

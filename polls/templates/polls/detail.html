@@ -1,9 +1,12 @@
 {% extends "polls/base.html" %}
+{% load cms_tags %}
 
 {% block title_page %}{{ question.question_text }}{% endblock %}
 
 {% block content_title %}
+    {% render_model_block question %}
     <h1>{{ question.question_text }}</h1>
+    {% endrender_model_block %}
 {% endblock %}
 
 {% block content %}
